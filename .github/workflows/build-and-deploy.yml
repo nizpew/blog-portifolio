@@ -1,12 +1,12 @@
-name: PNPM Workflow
+name: Deploy to GitHub Pages
 
 on:
   push:
     branches:
-      - main  # Altere para o nome do seu branch principal
+      - main  # Change to your main branch
 
 jobs:
-  install-and-run:
+  deploy:
     runs-on: ubuntu-latest
 
     steps:
@@ -16,7 +16,7 @@ jobs:
       - name: Setup Node.js
         uses: actions/setup-node@v2
         with:
-          node-version: '18'  # Atualize para uma versão compatível do Node.js
+          node-version: '18'  # Specify your Node.js version
 
       - name: Install PNPM
         run: npm install -g pnpm
@@ -24,5 +24,14 @@ jobs:
       - name: Install Dependencies
         run: pnpm install
 
-      - name: Run Analytics
-        run: pnpm run dev:analytics
+      - name: Build Project
+        run: pnpm run build  # Adjust this command based on your build script
+
+      - name: Create .nojekyll
+        run: touch ./out/.nojekyll  # Prevent Jekyll processing on GitHub Pages
+
+      - name: Deploy to GitHub Pages
+        uses: JamesIves/github-pages-deploy-action@v4
+        with:
+          branch: gh-pages  # The branch to deploy to
+          folder: out  # The folder containing your built files
