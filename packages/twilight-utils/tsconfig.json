@@ -1,0 +1,26 @@
+{
+	"compilerOptions": {
+		"target": "es2015",
+		"lib": ["esnext"],
+		"allowJs": true,
+		"skipLibCheck": true,
+		"forceConsistentCasingInFileNames": true,
+		"noEmit": true,
+		"esModuleInterop": true,
+		"module": "esnext",
+		"moduleResolution": "node",
+		"resolveJsonModule": true,
+		"isolatedModules": true,
+		"noImplicitAny": false,
+		"baseUrl": "./",
+		"allowSyntheticDefaultImports": true,
+		"experimentalDecorators": true,
+		"noImplicitReturns": true,
+		"noImplicitThis": false,
+		"declaration": true,
+		"strictNullChecks": false,
+		"strict": true
+	},
+	"include": ["**/*.tsx", "**/*.ts", "node_modules/index.ts"],
+	"exclude": ["node_modules", "cypress"]
+}
