@@ -1,1 +1,0 @@
-export const LISTMONK_LIST_UUID = "5f1f6317-7699-42e7-852c-8064c0f46f97"
