@@ -16,7 +16,7 @@ jobs:
       - name: Setup Node.js
         uses: actions/setup-node@v2
         with:
-          node-version: '16'  # Altere para a versão do Node.js que você deseja usar
+          node-version: '18'  # Atualize para uma versão compatível do Node.js
 
       - name: Install PNPM
         run: npm install -g pnpm
