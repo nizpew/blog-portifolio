@@ -1,5 +1,5 @@
 <div align="center">
-  <h1>OUORZ-MONO</h1>
+  <h1>blog based on OUORZ-MONO</h1>
   <p>Source code & Docker image that power <a href="https://lipeng.ac" target="_blank">lipeng.ac</a> and other related projects</p>
 
   <a href="https://github.com/ttttonyhe/ouorz-mono">
