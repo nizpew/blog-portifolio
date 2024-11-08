@@ -1,0 +1,28 @@
+name: PNPM Workflow
+
+on:
+  push:
+    branches:
+      - main  # Altere para o nome do seu branch principal
+
+jobs:
+  install-and-run:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v2
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v2
+        with:
+          node-version: '16'  # Altere para a versão do Node.js que você deseja usar
+
+      - name: Install PNPM
+        run: npm install -g pnpm
+
+      - name: Install Dependencies
+        run: pnpm install
+
+      - name: Run Analytics
+        run: pnpm run dev:analytics
