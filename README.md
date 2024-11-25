@@ -10,3 +10,7 @@
 ### Observações
 Certifique-se de ter o Node.js e o pnpm instalados em sua máquina.
 
+### Preview
+
+![image](https://github.com/user-attachments/assets/b4c066b4-3ed9-447a-bcdd-2af11136a6f0)
+![image](https://github.com/user-attachments/assets/f97edc43-8290-4234-898a-e447fa5889f8)
